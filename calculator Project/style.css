@@ -1,0 +1,142 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: sans-serif;
+    /* background-color: #ecf0f3 ; */
+    background-color: #081b2a;
+}
+h1{
+    text-align: center;
+    margin: 0;
+    margin-top: 30px;
+    color: #fff;
+    font-size: 50px;
+
+}
+.container
+{
+    height:100vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ecf0f3;
+    background-color: #081b2a;
+}
+button
+{
+    display: inline-block;
+}
+.calcultor
+{
+    box-shadow: 6px 6px 100px rgb(168, 205, 87),
+                6px 6px 13px rgba(3, 11, 54, 0.16);
+    border-radius: 16px;
+    padding: 16px;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(4,66px);
+    
+}
+input
+{
+    grid-column: span 4 ;
+    height: 68px;
+    width: 258px;
+    box-shadow: inset -6px -6px 13px #fff,
+                inset 6px 6px 13px rgba(0,0,0,.16);
+    background-color: #ecf0f3;
+    border:none;
+    border-radius: 32px;
+    color: #0D0D0D;
+    text-align: end;
+    margin: 40px 0 30px 0;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: bold;
+
+
+
+}
+button:hover{
+    box-shadow:  inset 6px 6px 30px  #2f2222,
+     inset 6px 6px 13px rgba(0,0,0,.16); 
+}
+button
+{
+    box-shadow:  inset 6px 6px 30px  #181111,
+     inset 6px 6px 13px rgba(0,0,0,.16); 
+    background-color: #242B2E;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.equal
+{
+    width: 120px;
+    border-radius:42px ;
+    box-shadow: inset 6px 6px 13px #fff,
+    inset 6px 6px 13px rgba(0,0,0,.16); 
+    background-color: #ecf0f3;
+}
+.equal:hover
+{
+    box-shadow:  inset 6px 6px 13px rgba(27, 27, 10, 0.16),
+    inset 6px 6px 13px rgba(0,0,0,.16); 
+}
+.operater
+{
+    background-color:#b99123 ;
+    box-shadow:  inset 6px 6px 13px rgba(233, 40, 15, 0.16),
+    inset 6px 6px 13px rgba(0,0,0,.16); 
+}
+.operater:hover
+{
+    background-color:#23b92a ; 
+    box-shadow:   6px 6px 13px rgba(233, 40, 15, 0.16),
+    inset 6px 6px 13px rgba(0,0,0,.16); 
+}
+.del
+{
+    background-color:#bb1212 ;
+    box-shadow:  6px 6px 13px rgba(0,0,0,.16),
+    inset 6px 6px 13px rgba(0,0,0,.16); 
+}
+.del:hover{
+    background-color:#23b92a ;
+    box-shadow:  6px 6px 13px rgba(0,0,0,.16),
+    inset 6px 6px 13px rgba(0,0,0,.16); 
+}
+.cal
+{
+    background-color:#206bcf ;
+    box-shadow:  -6px -6px 13px rgba(0,0,0,.16),
+    inset 6px 6px 13px rgba(0,0,0,.16); 
+}
+.cal:hover
+{
+    background-color:#23b92a ;
+    box-shadow:  6px 6px 13px rgba(0,0,0,.16),
+    inset 6px 6px 13px rgba(0,0,0,.16);  
+}
+@media (max-width:420px) {
+    h1
+    {
+        font-size: 50px;
+        margin:0;
+        margin-top: 30px;
+    }
+    .container
+    {
+        margin-top: -100px;
+    }
+}
