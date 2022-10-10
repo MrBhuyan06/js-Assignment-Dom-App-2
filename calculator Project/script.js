@@ -23,7 +23,11 @@ btn.forEach((button) =>
             }
             else if(e .target.innerText == 'c')
             {
-                inputString.value='0';
+                // displayString="0";
+                // inputString.value=displayString;
+                displayString="0"
+                inputString.value=displayString
+                displayString=displayString.slice(0,-1)
             }
             else if(e .target.innerText == 'DEL')
             {
@@ -40,6 +44,7 @@ btn.forEach((button) =>
         catch(err)
         {
             alert("please enter")
+            inputString.value='0'
         }
     });
 })
