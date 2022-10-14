@@ -1,0 +1,57 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #242B2E;
+    color: red;
+   
+}
+.watch-container
+{
+    /* margin-top: 40px; */
+    width:100%;
+    max-width: 500px;
+    margin: 100px auto;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+}
+.watch-display
+{
+    font-size: 50px;
+    border:none;
+    box-shadow: 3px 3px 100px rgb(0, 140, 255);
+    padding: 100px 50px;
+    border-radius: 50%;
+}
+.watch-display:hover{
+    /* border: 2px
+     solid yellow; */
+     outline: #242B2E;
+}
+.btn-container button
+{
+    margin-top: 50px;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    appearance: none;
+    background: none;
+    background: #35BDD0;
+    margin-left: 10px ;
+    border-radius: 10px;
+    /* transition: ; */
+    box-shadow: 3px 3px 100px rgb(0, 140, 255);
+
+}
+
+button:hover{
+   box-shadow:3px 3px 100px 20px rgb(0, 128, 11); 
+   cursor: pointer;
+}
