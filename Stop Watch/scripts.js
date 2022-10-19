@@ -56,7 +56,7 @@ function timer()
 
 
    time_ele.innerText=` ${hrs}:${mins}:${sec} `;
-   
+//    interval=null;
 
 
 }
@@ -77,6 +77,8 @@ function stopTime()
     console.log(interval);
    clearInterval(interval)
 //    interval= setInterval(timer,120000)
+    interval=null
+
 }
 
 function resetTime()
@@ -84,4 +86,5 @@ function resetTime()
     clearInterval(interval);
     time_ele.innerText="00:00:00";
     seconds=0
+    interval=null
 }
