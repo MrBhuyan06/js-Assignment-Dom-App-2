@@ -1,0 +1,134 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #242B2E;
+    color: #fff;
+}
+.form-container
+{
+    width:70%;
+    
+    margin: 10px auto;
+    
+    box-shadow: 2px 2px 3px  2px rgb(63, 62, 62);
+    border-radius: 1rem;
+   
+    margin-top: 1em;
+    padding: .5em .5em;
+}
+@media  screen and (min-width:670px) {
+    .form-container
+{
+    width:50%;
+    
+    margin: 0 auto;
+   
+   
+    margin: 1em auto;
+    padding: 1em 1em;
+}
+i,label,
+input,
+span{
+    display:block;
+   
+}
+}
+
+.form-group
+{
+    position: relative;
+    margin-top:1em ;
+
+}
+.form-group i{
+    position: absolute;
+    right: 3%;
+    top:40px;
+    visibility:hidden ;
+}
+
+
+.form-group.success   i.fa-circle-check
+{
+    visibility:visible;
+    color:green
+    
+}
+.form-group.success input
+{
+    outline: 0;
+    border-color:green ;
+}
+.form-group.success span{
+    color:green;
+}
+.form-group.error  i.fa-exclamation
+{
+    visibility:visible;
+    color: red;
+}
+.form-group.error input
+{
+    outline: 0;
+    border-color:red ;
+}
+.form-group.error span{
+    color: red;
+}
+input
+{
+    margin-top: 0;
+    width: 100%;
+    margin-left:  0;
+    padding:.5em ;
+    margin-top: 0.3em;
+    border: 1px solid blue;
+    border-radius: .2rem;
+}
+.form-group input:focus{
+    outline:1;
+    outline-color: rgb(0, 140, 255);
+    border-color: hsl(271, 76%, 53%);
+    border:2px solid hsl(271, 76%, 53%);
+}
+label{
+    font-size: 1.5rem;
+}
+h1{
+    margin-top: 0;
+    margin-bottom: 1em;
+    color: green;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#btn{
+    display: inline;
+    all:unset;
+    width:30%;
+    background-color:green;
+    padding:.5em .2em;
+    text-align: center;
+    margin-top: .5em;
+    
+    border-radius:.5rem;
+    font-size: 1.5rem;
+    color: #ffff;
+    cursor: pointer;
+}
+#form{
+    margin-top: 0;
+    display: block;
+    background-color: #d2e3de0d;
+    min-height:10%;
+    
+}
